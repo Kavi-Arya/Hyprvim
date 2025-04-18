@@ -1,1 +1,3 @@
 # Hyprvim
+
+**The Modal Hyprland**
