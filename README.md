@@ -1,7 +1,17 @@
 # Hyprvim
+***The Modal Hyprland***
 
-**The Modal Hyprland**
 ## Dependencies
-1. Matugen
-2. Eww
+1. Matugen: For colors
+2. Eww: For whichkey style pop-up
 ## Modes
+1. Insert
+2. Normal
+3. Run
+4. Site
+## TODO: 
+- ADD PHOTOS
+- ADD A VIDEO
+- ADD WALLPAPER SHOWCASE
+- ADD THEMED APPS SHOWCASE
+- GIVE CRED FOR WAYLAND STYLE INSPIRATION(recreated with waybar insted of ags)
