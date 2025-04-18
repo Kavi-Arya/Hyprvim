@@ -1,0 +1,64 @@
+[pyprland]
+plugins = [
+  "expose",
+  "fetch_client_menu",
+  "lost_windows",
+  "magnify",
+  "scratchpads",
+  "shift_monitors",
+  "toggle_special",
+  "workspaces_follow_focus",
+  "change_workspace",
+]
+
+# using variables for demonstration purposes (not needed)
+[pyprland.variables]
+term_classed = "kitty --class kitty-dropterm"
+
+[scratchpads.term]
+animation = "fromTop"
+command = "kitty -c ~/.config/kitty/kitty-hypr.conf --class kitty-dropterm tmux"
+class = "kitty-dropterm"
+size = "85% 80%"
+max_size = "1920px 100%"
+margin = 50
+
+[scratchpads.pulsemixer]
+animation = "fromTop"
+command = "kitty -c ~/.config/kitty/kitty-hypr.conf --class kitty-dropterm pulsemixer"
+class = "kitty-dropterm"
+size = "85% 80%"
+max_size = "1920px 100%"
+margin = 50
+
+[scratchpads.volume]
+animation = "fromBottom"
+command = "pavucontrol"
+class = "org.pulseaudio.pavucontrol"
+size = "40% 90%"
+unfocus = "hide"
+lazy = true
+
+[scratchpads.bluetooth]
+animation = "fromtop"
+command = "blueman-manager"
+class = "blueman-manager"
+size = "40% 90%"
+unfocus = "hide"
+lazy = true
+
+[scratchpads.music]
+animation = "fromRight"
+command = "fooyin"
+class = "org.fooyin.fooyin"
+size = "70% 90%"
+unfocus = "hide"
+lazy = true
+
+[scratchpads.swingmusic]
+animation = "fromRight"
+command = "/home/kvl/.config/surf-distrotube/Swingmusic-linux-x64/Swingmusic"
+class = "swingmusic-nativefier-85b491"
+size = "70% 90%"
+unfocus = "hide"
+lazy = true

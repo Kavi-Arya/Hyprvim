@@ -1,0 +1,1 @@
+@define-color color1 {{colors.tertiary.default.hex | set_lightness: -10.0}};

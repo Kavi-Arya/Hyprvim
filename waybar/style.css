@@ -1,0 +1,232 @@
+@import "colors.css";
+@import "maincolors.css";
+
+@keyframes gradient-animation {
+  0% {
+    background: radial-gradient(ellipse farthest-corner at 12px -24px, @accent, @color2, @color3, @color4, @color5, @color6);
+  }
+  16% {
+    background: radial-gradient(ellipse farthest-corner at 12px -24px, @color6, @accent, @color2, @color3, @color4, @color5);
+  }
+  33% {
+    background: radial-gradient(ellipse farthest-corner at 12px -24px, @color5, @color6, @accent, @color2, @color3, @color4);
+  }
+  50% {
+    background: radial-gradient(ellipse farthest-corner at 12px -24px, @color4, @color5, @color6, @accent, @color2, @color3);
+  }
+  66% {
+    background: radial-gradient(ellipse farthest-corner at 12px -24px, @color3, @color4, @color5, @color6, @accent, @color2);
+  }
+  83% {
+    background: radial-gradient(ellipse farthest-corner at 12px -24px, @color2, @color3, @color4, @color5, @color6, @accent);
+  }
+  100% {
+    background: radial-gradient(ellipse farthest-corner at 12px -24px, @accent, @color2, @color3, @color4, @color5, @color6);
+  }
+}
+
+#backlight,
+#battery,
+#cpu,
+#disk,
+#idle_inhibitor,
+#keyboard-state,
+#pulseaudio,
+#clock,
+#tags,
+#language,
+#memory,
+#network,
+#sndio,
+#mode,
+#window,
+#workspaces,
+#temperature,
+#taskbar,
+#workspaces,
+#custom-treefetch-downloads,
+#custom-archupdates,
+#custom-axyl-downloads,
+#custom-gpu-temp,
+#custom-artix,
+#custom-cpubars,
+#custom-nettrf,
+#custom-submap,
+#cava,
+#custom-nowplaying {
+  background: @background;
+  color: @foreground;
+  font-size: 13px;
+  margin: 0px 0px 2px 0px;
+}
+
+
+* {
+  font-family: "Zed Mono Nerd Font";
+  font-size: 13px;
+}
+
+window#waybar {
+  background-color: @background;
+  color: @foreground;
+}
+
+.modules-left {
+  background-color: @background;
+  padding: 0px 0px 0px 0px;
+}
+
+.modules-right {
+  background-color: @background;
+  padding: 0px 0px 0px 0px;
+}
+
+#workspaces {
+}
+
+#workspaces button {
+  font-size: 15px;
+  padding: 0px 8px 0px 8px;
+  min-width: 1px;
+}
+
+#workspaces button.empty {
+  color: @foreground;
+}
+
+#workspaces button.visible {
+  padding: 0px 8px 0px 8px;
+  min-width: 1px;
+  color: @accent;
+}
+
+#workspaces button.focused {
+  padding: 0px 8px 0px 8px;
+  background-color: @color1;
+  color: @foreground;
+}
+
+#workspaces button.active {
+  padding: 0px 8px 0px 8px;
+  background-color: @color1;
+  color: @forground;
+}
+
+#custom-nowplaying {
+  color: @foreground;
+  background-color: @background;
+  padding: 0px 10px 0px 0px;
+}
+
+#cava {
+  color: @foreground;
+  background-color: @background;
+  padding: 0px 10px 0px 0px;
+  margin: 0px 0px 2px 0px;
+}
+
+#window {
+  color: @foreground;
+  background-color: @background;
+  padding: 0px 10px 0px 0px;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+  color: transparent;
+  padding: 0px 10px 0px 0px;
+}
+
+window#waybar.empty {
+  background-color: @background;
+  padding: 0px 10px 0px 0px;
+}
+
+#custom-separator2 {
+  margin: 0em 0.3em 0em 0.3em;
+  background: @background;
+  color: #808080;
+  font-size: 15px;
+  /*font-size: 1.1em;*/
+}
+
+#custom-separator {
+  margin: 0em 0.3em 0em 0.3em;
+  background: @background;
+  color: #808080;
+  font-size: 15px;
+  /*font-size: 1.1em;*/
+}
+
+/* Center Alined */
+#custom-archupdates {
+  margin: 0px 0px 2px 0px;
+}
+
+#custom-weather {
+  margin: 0px 0px 2px 0px;
+}
+
+#custom-cpubars {
+  margin: 0px 0px 4px 0px;
+  color: @color1;
+  background-color: @background;
+}
+
+#custom-cputemp {
+  margin: 0px 0px 2px 0px;
+}
+
+#custom-linux-icon {
+  font-size: 16px;
+  margin: 0px 0px 2px 0px;
+  color: @color1;
+}
+
+#custom-submap {
+  padding-left: 7px;
+  padding-right: 6.9px;
+  margin: 0px 10px 2px 0px;
+  color: @background;
+
+  background: radial-gradient(ellipse farthest-corner at 12px -24px, @accent, @color2, @color3, @color4, @color5, @color6);
+  box-shadow: 0 0 0px 1px rgba(5, 5, 15, 0.15);
+  min-width: 45px;
+  transition: all 0.25s, color 0s, border 0s, font-weight 0s, background 0.15s;
+  animation-name: gradient-animation;
+  animation-direction: reverse;
+  animation-duration: 3s;
+  animation-delay: 0.15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+#clock {
+  margin: 0px 0px 2px 0px;
+  padding-left: 18px;
+  padding-right: 18px;
+  background-color: @shadow;
+  color: @color1;
+}
+
+
+#custom-workspaces {
+  margin: 0px 0px 2px 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: @color1;
+  color: @background;
+
+  background: radial-gradient(ellipse farthest-corner at 12px -24px, @accent, @color2, @color3, @color4, @color5, @color6);
+  box-shadow: 0 0 0px 1px rgba(5, 5, 15, 0.15);
+  min-width: 45px;
+  transition: all 0.25s, color 0s, border 0s, font-weight 0s, background 0.15s;
+  animation-name: gradient-animation;
+  animation-direction: reverse;
+  animation-duration: 3s;
+  animation-delay: 0.15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}

@@ -1,0 +1,24 @@
+#!/bin/sh
+SITEKEYS=$(cat "$HOME/.config/hypr/whichkey/whichkey-site.sh")
+RUNKEYS=$(cat "$HOME/.config/hypr/whichkey/whichkey-run.sh")
+
+# Check that exactly one argument is provided
+if [ "$#" -ne 1 ]; then
+  echo "Usage: $0 {site|run}"
+  exit 1
+fi
+
+case "$1" in
+site)
+  hyprctl notify -1 4500 "rgba(e78a4eFF)" "$SITEKEYS"
+  exit 0
+  ;;
+run)
+  hyprctl notify -1 4500 "rgba(EA6962FF)" "$RUNKEYS"
+  exit 0
+  ;;
+*)
+  echo "Invalid argument. Use 'site' or 'run'."
+  exit 1
+  ;;
+esac

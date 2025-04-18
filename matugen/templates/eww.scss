@@ -1,0 +1,35 @@
+$surface-subtext: {{colors.on_surface.default.hex}};
+$surface-base: {{colors.background.default.hex}};
+$surface-peach: {{colors.error.default.hex | set_lightness: -10.0}};
+$surface-mauve: {{colors.primary_fixed.default.hex | set_lightness: -10.0}};
+$surface-blue: {{colors.tertiary.default.hex | set_lightness: -10.0}};
+
+* {
+  all: unset;
+}
+
+.layout-box {
+  font-family: "Zed Mono Nerd Font";
+  font-size: 1.2em;
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: rgba($surface-subtext, 1);
+  background-color: rgba($surface-base, 1);
+  border: 2px solid rgba($surface-mauve, 0.8);
+  border-radius: 5px;
+  margin: 0.5em 2.5em 0.5em 2.5em;
+}
+
+.layout-key {
+  color: rgba($surface-blue, 1);
+}
+
+.layout-submap {
+  color: rgba($surface-mauve, 1);
+}
+
+.layout-desc {
+  font-size: 1.1em;
+  color: rgba($surface-peach, 1);
+}
+

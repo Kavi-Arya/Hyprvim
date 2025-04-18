@@ -1,0 +1,26 @@
+@define-color foreground {{colors.on_background.default.hex}};
+@define-color background {{colors.background.default.hex}};
+@define-color color0 {{colors.background.default.hex}};
+
+@define-color accent   {{colors.tertiary.default.hex | set_lightness: -10.0}};
+@define-color color2   {{colors.tertiary.default.hex | set_lightness: -10.0}};
+@define-color color3   {{colors.primary_fixed.default.hex | set_lightness: -10.0}};
+@define-color color4   {{colors.error.default.hex | set_lightness: -10.0}};
+@define-color color5   {{colors.tertiary.default.hex | set_lightness: -10.0}};
+@define-color color6   {{colors.primary_fixed.default.hex | set_lightness: -10.0}};
+
+@define-color shadow   {{colors.on_secondary.default.hex | set_lightness: -10.0}};
+
+
+@define-color orange #fc9d8a;
+@define-color blue-alt #7E9CD8;
+@define-color purple #d3869b;
+@define-color bg #1F1F28;
+@define-color bgh #1f1f28;
+@define-color bg1 #191919;
+@define-color bg2 #34344b;
+@define-color cursor #e2e2e9;
+
+/*@define-color background #000000;*/
+/*@define-color foreground #ffffff;*/
+/*@define-color color0 #1e1f28;*/

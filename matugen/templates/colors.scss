@@ -1,0 +1,51 @@
+$red:          {{colors.error.default.hex | set_lightness: -10.0}};
+$peach:        {{colors.primary_fixed.default.hex | set_lightness: 0.0}};
+$yellow:       {{colors.primary_fixed.default.hex | set_lightness: -10.0}};
+$green:        {{colors.tertiary.default.hex | set_lightness: -10.0}};
+$cyan:         {{colors.primary_fixed.default.hex | set_lightness: -10.0}};
+$sapphire:     {{colors.tertiary.default.hex | set_lightness: 0.0}};
+$blue:         {{colors.error.default.hex | set_lightness: 0.0}};
+$magenta:      {{colors.tertiary.default.hex | set_lightness: -10.0}};
+$pink:         {{colors.error.default.hex | set_lightness: 0.0}};
+$mauve:        {{colors.primary_fixed.default.hex | set_lightness: 0.0}};
+
+
+$surface2:     {{colors.surface_variant.default.hex}};
+$surface1:     {{colors.background.default.hex}};
+$surface0:     {{colors.surface_variant.default.hex}};
+$base:         {{colors.background.default.hex}};
+$mantle:       #181825;
+$crust:        #11111b;
+
+
+$bg0:          {{colors.background.default.hex}};
+$bg:           {{colors.background.default.hex}};
+$bg1:          #313244;
+$white-text:   #cdd6f4;
+$fg:           {{colors.on_surface.default.hex}};
+
+$fg-opposite:  scale-color($fg, $lightness: -15%, $saturation: -25%);
+
+// Box shadow of modules automatically calculated from the background color
+$shadow:              scale-color($bg, $lightness: -40%, $saturation: -28%);
+
+$fg-alt:              $shadow;
+@if lightness($bg) < 50% {
+  $fg-alt:            scale-color($bg, $lightness: 27%);
+}
+
+// Accent color used by the River active tags
+$accent-color:        $fg;
+
+// Foreground + accent color for modules w/o backgrounds
+$fg-no-bg:            $fg;
+$accent-color-no-bg:  $shadow;
+
+// Set this to true or false depending if the mpd module is readable
+$dark-theme:          true;
+
+@if $dark-theme {
+  $fg-no-bg:             $fg-opposite;
+  $accent-color-no-bg:   $bg;
+}
+
