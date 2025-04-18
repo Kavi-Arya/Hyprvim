@@ -1,0 +1,37 @@
+$surface-subtext: #928374; // a muted gray used for secondary text
+$surface-base: #1d2021; // a very dark “hard” background
+$surface-peach: #e78a4e; // a bright, signature Gruvbox orange
+$surface-mauve: #d3869b; // a soft purple reminiscent of Gruvbox’s accent
+$surface-blue: #83a598; // a balanced blue accent
+
+
+* {
+  all: unset;
+}
+
+.layout-box {
+  font-family: "Zed Mono Nerd Font";
+  font-size: 1.2em;
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: rgba($surface-subtext, 1);
+  background-color: rgba($surface-base, 1);
+  border: 2px solid rgba($surface-mauve, 0.8);
+  border-radius: 5px;
+  margin: 0.5em 2.5em 0.5em 2.5em;
+}
+
+.layout-key {
+  color: rgba($surface-blue, 1);
+}
+
+.layout-submap {
+  color: rgba($surface-mauve, 1);
+}
+
+.layout-desc {
+  font-size: 1.1em;
+  color: rgba($surface-peach, 1);
+}
+
+
