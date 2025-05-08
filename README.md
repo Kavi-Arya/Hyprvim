@@ -15,5 +15,6 @@
 - ADD WALLPAPER SHOWCASE
 - ADD THEMED APPS SHOWCASE
 - GIVE CRED FOR WAYLAND STYLE INSPIRATION(recreated with waybar insted of ags)
+- GIVE CRED FOR EWW-WHICHKEY THING
 - NIX FLAKE(~~~can someone help me with this?~~~)
 - ARCH INSTALL SCRIPT with all the pkgs
