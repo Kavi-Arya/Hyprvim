@@ -1,0 +1,10 @@
+/home/kvl/repo/hyprvim/hyprmodes/target/debug/deps/libnotify-7d845ad068c7ae1d.rmeta: /home/kvl/.local/share/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/notify-4.0.18/src/lib.rs /home/kvl/.local/share/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/notify-4.0.18/src/inotify.rs /home/kvl/.local/share/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/notify-4.0.18/src/null.rs /home/kvl/.local/share/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/notify-4.0.18/src/poll.rs /home/kvl/.local/share/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/notify-4.0.18/src/debounce/mod.rs /home/kvl/.local/share/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/notify-4.0.18/src/debounce/timer.rs
+
+/home/kvl/repo/hyprvim/hyprmodes/target/debug/deps/notify-7d845ad068c7ae1d.d: /home/kvl/.local/share/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/notify-4.0.18/src/lib.rs /home/kvl/.local/share/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/notify-4.0.18/src/inotify.rs /home/kvl/.local/share/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/notify-4.0.18/src/null.rs /home/kvl/.local/share/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/notify-4.0.18/src/poll.rs /home/kvl/.local/share/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/notify-4.0.18/src/debounce/mod.rs /home/kvl/.local/share/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/notify-4.0.18/src/debounce/timer.rs
+
+/home/kvl/.local/share/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/notify-4.0.18/src/lib.rs:
+/home/kvl/.local/share/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/notify-4.0.18/src/inotify.rs:
+/home/kvl/.local/share/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/notify-4.0.18/src/null.rs:
+/home/kvl/.local/share/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/notify-4.0.18/src/poll.rs:
+/home/kvl/.local/share/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/notify-4.0.18/src/debounce/mod.rs:
+/home/kvl/.local/share/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/notify-4.0.18/src/debounce/timer.rs:

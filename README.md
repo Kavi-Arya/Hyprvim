@@ -18,3 +18,4 @@
 - GIVE CRED FOR EWW-WHICHKEY THING
 - NIX FLAKE(~~~can someone help me with this?~~~)
 - ARCH INSTALL SCRIPT with all the pkgs
+- LIST HYPR PLUGINS
